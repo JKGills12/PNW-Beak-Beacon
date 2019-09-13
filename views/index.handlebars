@@ -1,15 +1,78 @@
+<ul class="topnav">
+  <li><a href="/">Home</a></li>
+  <li><a class="active" href="/add">Add</a></li>
+  <li><a href="/search">Search</a></li>
+</ul>
+
+
 <div id="home">
     <div class="container">
         <div class="row">
             <div class="col-8 offset-2">
-                <h1>{{msg}}</h1>
-                <h2>This is our Home Page!</h2>
+                <h1>WELCOME TO PNW BEAK BEACON!</h1>
+                
+                <div class="jumbotron" style="background-image: url(https://media.treehugger.com/assets/images/2016/07/green-forest-trees.jpg.860x0_q70_crop-scale.jpg); background-size: 100%;">
+                    <div class="tree_banner">
+                    </div>
+                </div>
+                
+                <p>
+                    Intro paragraph...
+                </p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+
+
+    <div class="container">
+        <img src="https://www.birdatlas.bc.ca/photos/amgo_500.jpg" class="img-thumbnail" alt="Cinque Terre" width="220" height="186"> 
+        <img src="https://uwpressblog.files.wordpress.com/2016/08/stjy00016-stellars-jay_p.jpg?w=625&h=416" class="img-thumbnail" alt="Cinque Terre" width="220" height="186"> 
+        <img src="http://media.oregonlive.com/outdoors_impact/photo/juncojpg-9c4ccd6fedafa232.jpg" class="img-thumbnail" alt="Cinque Terre" width="220" height="186"> 
+    </div>
+
+                <br>
+                <br>
+                <br>
+
+
+
+
+                <h2>ADD BIRDS</h2>
+
                 <form class="clearfix mb-4" action="POST">
                     <div class="form-group">
-                        <label for="example-text">Example Text</label>
+                        <label for="example-text">Bird Name</label>
                         <input type="text" id="example-text" class="form-control" aria-describedby="example-text"
-                            placeholder="Enter Example Text">
+                            placeholder="Enter Bird Name">
                     </div>
+
+                    <div class="form-group">
+                        <label for="example-text">Family</label>
+                        <input type="text" id="example-text" class="form-control" aria-describedby="example-text"
+                            placeholder="Enter Family">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="example-text">Voice</label>
+                        <input type="text" id="example-text" class="form-control" aria-describedby="example-text"
+                            placeholder="Enter Voice">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="example-text">Habitat</label>
+                        <input type="text" id="example-text" class="form-control" aria-describedby="example-text"
+                            placeholder="Enter Habitat">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="example-text">Location</label>
+                        <input type="text" id="example-text" class="form-control" aria-describedby="example-text"
+                            placeholder="Enter Location">
+                    </div>
+
+
                     <div class="form-group">
                         <label for="example-description">Example Description</label>
                         <textarea class="form-control" id="example-description" aria-describedby="example-description"
@@ -17,7 +80,7 @@
                     </div>
                     <button id="submit" class="btn btn-primary float-right">Submit</button>
                 </form>
-                <h3>Examples:</h3>
+                <h3>Bird Sightings:</h3>
                 <ul id="example-list" class="list-group">
                     {{#each examples}}
                     <li data-id="{{this.id}}" class="list-group-item">
@@ -26,6 +89,24 @@
                     </li>
                     {{/each}}
                 </ul>
+
+            
+            <br>
+            <br>
+            <br>
+
+
+
+            <h2>SEARCH BIRDS</h2>
+
+        <div class="search-container">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+
+
             </div>
         </div>
     </div>
