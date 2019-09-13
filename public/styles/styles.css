@@ -1,3 +1,53 @@
 .list-group-item {
     line-height: 2.5;
 }
+
+#home {
+    background: #F5F5F5;
+    font-family: 'Asap', sans-serif;
+   
+}
+
+h1 {
+    font-family: 'Unica One', cursive;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Unica One', cursive;
+}
+
+h3 {
+    font-family: 'Unica One', cursive;
+}
+
+body {margin: 0;}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:#F5F5F5;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #035104;}
+
+ul.topnav li a.active {background-color: #85C458;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
