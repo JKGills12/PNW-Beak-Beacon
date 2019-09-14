@@ -13,7 +13,7 @@ CREATE TABLE chirp_table (
 );
    
    SELECT * FROM chirp_table;
-      INSERT INTO chirp_table (bird_name, family, voice, habitat, location)
+      INSERT INTO chirp_table (bird_name, family, voice, habitat, places)
          VALUES 
             ("Red-Throated Loon", "Loon", "Silent in NW", "Ocean and Bays", "Coast"),
             ("Pacific Loon", "Loon", "Silent in NW", "Ocean and bays", "Coast"),
