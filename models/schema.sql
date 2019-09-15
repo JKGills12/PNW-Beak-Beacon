@@ -1,3 +1,4 @@
+
    SELECT * FROM chirp_table;
       INSERT INTO chirp_table (bird_name, family, voice, habitat, location)
          VALUES 
@@ -258,3 +259,4 @@
             ("American Goldfinch", "Finch", "Twitters", "Farms", "Northwest"),
             ("Evening Grosbeak", "Finch", "Warble", "Forest", "Northwest"),
             ("House Sparrow", "Old World Sparrow", "Chireep", "Towns", "Northwest")
+
