@@ -465,13 +465,14 @@ var birdsArray = [
     photo: "./public/img/house-wren.jpg"
   },
   {
-    name: "Hutton's Viro",
-    photo: "./public/img/huttons-viro.jpg"
+    name: "Hutton's Vireo",
+    photo: "./public/img/huttons-vireo.jpg"
   },
   {
     name: "Killdeer",
     photo: "./public/img/killdear.jpg"
-  },  {
+  },
+  {
     name: "Lark Sparrow",
     photo: "./public/img/lark-sparrow.jpg"
   },
@@ -631,7 +632,398 @@ var birdsArray = [
     name: "Pigeon Guillemot",
     photo: "./public/img/pigeon-guillemot.jpg"
   },
-
+  {
+    name: "Pileated Woodpecker",
+    photo: "./public/img/pigeon-guillemot.jpg"
+  },
+  {
+    name: "Pine Grosbeak",
+    photo: "./public/img/pine-grosbeak.jpg"
+  },
+  {
+    name: "Pine Siskin",
+    photo: "./public/img/pine-siskin.jpg"
+  },
+  {
+    name: "Pink-footed Shearwater",
+    photo: "./public/img/pink-footed-shearwater.jpg"
+  },
+  {
+    name: "Prairie Falcon",
+    photo: "./public/img/prairie-falcon.jpg"
+  },
+  {
+    name: "Purple Finch",
+    photo: "./public/img/purple-finch.jpg"
+  },
+  {
+    name: "Pygmy Nuthatch",
+    photo: "./public/img/pygmy-nuthatch.jpg"
+  },
+  {
+    name: "Red-breasted Merganser",
+    photo: "./public/img/red-breasted-merganser.jpg"
+  },
+  {
+    name: "Red-breasted Nuthatch",
+    photo: "./public/img/red-breasted-nuthatch.jpg"
+  },
+  {
+    name: "Red-breasted Sapsucker",
+    photo: "./public/img/red-breasted-sapsucker.jpg"
+  },
+  {
+    name: "Red Crossbill",
+    photo: "./public/img/red-crossbill.jpg"
+  },
+  {
+    name: "Red-eyed Vireo",
+    photo: "./public/img/red-eyed-vireo.jpg"
+  },
+  {
+    name: "Redhead",
+    photo: "./public/img/redhead.jpg"
+  },
+  {
+    name: "Red Knot",
+    photo: "./public/img/red-knot.jpg"
+  },
+  {
+    name: "Red-naped Sapsucker",
+    photo: "./public/img/red-naped-sapsucker.jpg"
+  },
+  {
+    name: "Red-necked Grebe",
+    photo: "./public/img/red-necked-grebe.jpg"
+  },
+  {
+    name: "Red-necked Phalarope ",
+    photo: "./public/img/red-necked-phalarope.jpg"
+  },
+  {
+    name: "Red-tailed Hawk",
+    photo: "./public/img/red-tailed-hawk.jpg"
+  },
+  {
+    name: "Red-throated Loon",
+    photo: "./public/img/red-throated-loon.jpg"
+  },
+  {
+    name: "Red-winged Blackbird",
+    photo: "./public/img/red-winged-blackbird.jpg"
+  },
+  {
+    name: "Rhinoceros Auklet",
+    photo: "./public/img/rhinoceros-auklet.jpg"
+  },
+  {
+    name: "Ring-billed Gull",
+    photo: "./public/img/ring-billed-gull.jpg"
+  },
+  {
+    name: "Ring-necked Duck",
+    photo: "./public/img/ring-necked-duck.jpg"
+  },
+  {
+    name: "Ring-necked Pheasant",
+    photo: "./public/img/ring-necked-pheasant.jpg"
+  },
+  {
+    name: "Rock Dove",
+    photo: "./public/img/rock-dove.jpg"
+  },
+  {
+    name: "Rock Sandpiper",
+    photo: "./public/img/rock-sandpiper.jpg"
+  },
+  {
+    name: "Rock Wren",
+    photo: "./public/img/rock-wren.jpg"
+  },
+  {
+    name: "Rough-legged Hawk",
+    photo: "./public/img/rough-legged-hawk.jpg"
+  },
+  {
+    name: "Ruby-crowned Kinglet",
+    photo: "./public/img/ruby-crowned-kinglet.jpg"
+  },
+  {
+    name: "Ruddy Duck",
+    photo: "./public/img/ruddy-duck.jpg"
+  },
+  {
+    name: "Ruddy Turnstone",
+    photo: "./public/img/ruddy-turnstone.jpg"
+  },
+  {
+    name: "Ruffled Grouse",
+    photo: "./public/img/ruffled-grouse.jpg"
+  },
+  {
+    name: "Rufous Hummingbird",
+    photo: "./public/img/rufous-hummingbird.jpg"
+  },
+  {
+    name: "Sage Grouse",
+    photo: "./public/img/sage-grouse.jpg"
+  },
+  {
+    name: "Sage Sparrow",
+    photo: "./public/img/sage-sparrow.jpg"
+  },
+  {
+    name: "Sanderling",
+    photo: "./public/img/sanderling.jpg"
+  },
+  {
+    name: "Sandhill Crane",
+    photo: "./public/img/sandhill-crane.jpg"
+  },
+  {
+    name: "Savannah Sparrow",
+    photo: "./public/img/savannah-sparrow.jpg"
+  },
+  {
+    name: "Say's Phoebe",
+    photo: "./public/img/says-phoebe.jpg"
+  },
+  {
+    name: "Semipalmated Plover",
+    photo: "./public/img/semipalmated-plover.jpg"
+  },
+  {
+    name: "Sharp-shinned Hawk",
+    photo: "./public/img/sharp-shinned-hawk.jpg"
+  },
+  {
+    name: "Short-billed Dowitcher",
+    photo: "./public/img/short-billed-dowitcher.jpg"
+  },
+  {
+    name: "Short-eared Owl",
+    photo: "./public/img/short-eared-owl.jpg"
+  },
+  {
+    name: "Snow Egret",
+    photo: "./public/img/snow-egret.jpg"
+  },
+  {
+    name: "Snow Goose",
+    photo: "./public/img/snow-goose.jpg"
+  },
+  {
+    name: "Snowy Plover",
+    photo: "./public/img/snowy-plover.jpg"
+  },
+  {
+    name: "Solitary Vireo",
+    photo: "./public/img/solitary-vireo.jpg"
+  },
+  {
+    name: "Song Sparrow",
+    photo: "./public/img/song-sparrow.jpg"
+  },
+  {
+    name: "Sooty Shearwater",
+    photo: "./public/img/sooty-shearwater.jpg"
+  },
+  {
+    name: "Spotted Owl",
+    photo: "./public/img/spotted-owl.jpg"
+  },
+  {
+    name: "Spotted Sandpiper",
+    photo: "./public/img/spotted-sandpiper.jpg"
+  },
+  {
+    name: "Spotted Towhee",
+    photo: "./public/img/spotted-towhee.jpg"
+  },
+  {
+    name: "Surfbird",
+    photo: "./public/img/surfbird.jpg"
+  },
+  {
+    name: "Surf Scoter",
+    photo: "./public/img/spotted-ow.jpg"
+  },
+  {
+    name: "Swainson's Hawk",
+    photo: "./public/img/swainsons-hawk.jpg"
+  },
+  {
+    name: "Swainson's Thrush",
+    photo: "./public/img/swainsons-thrush.jpg"
+  },
+  {
+    name: "Townsend's Solitaire",
+    photo: "./public/img/townsends-solitaire.jpg"
+  },
+  {
+    name: "Townsend's Warbler",
+    photo: "./public/img/townsends-warbler.jpg"
+  },
+  {
+    name: "Tree Swallow",
+    photo: "./public/img/tree-swallow.jpg"
+  },
+  {
+    name: "Trumpeter Swan",
+    photo: "./public/img/trumpeter-swan.jpg"
+  },
+  {
+    name: "Tufted Puffin",
+    photo: "./public/img/tufted-puffin.jpg"
+  },
+  {
+    name: "Turkey Vulture",
+    photo: "./public/img/turkey-vulture.jpg"
+  },
+  {
+    name: "Varied Thrush",
+    photo: "./public/img/varied-thrush.jpg"
+  },
+  {
+    name: " Vaux's Swift",
+    photo: "./public/img/vauxs-swift.jpg"
+  },
+  {
+    name: "Vesper Sparrow",
+    photo: "./public/img/vesper-sparrow.jpg"
+  },
+  {
+    name: "Violet-green Swallow",
+    photo: "./public/img/violet-green-swallow.jpg"
+  },
+  {
+    name: "Virginia Rail",
+    photo: "./public/img/virginia-rail.jpg"
+  },
+  {
+    name: "Wandering Tattler",
+    photo: "./public/img/wandering-tattler.jpg"
+  },
+  {
+    name: "Warbling Vireo",
+    photo: "./public/img/warbling-vireo.jpg"
+  },
+  {
+    name: "Western Bluebird",
+    photo: "./public/img/western-bluebird.jpg"
+  },
+  {
+    name: "Western Grebe",
+    photo: "./public/img/western-grebe.jpg"
+  },
+  {
+    name: "Western Gull",
+    photo: "./public/img/western-gull.jpg"
+  },
+  {
+    name: "Western Kingbird",
+    photo: "./public/img/western-kingbird.jpg"
+  },
+  {
+    name: "Western Meadowlark",
+    photo: "./public/img/western-meadowlark.jpg"
+  },
+  {
+    name: "Western Sandpiper",
+    photo: "./public/img/western-sandpiper.jpg"
+  },
+  {
+    name: "Western Screech Owl",
+    photo: "./public/img/western-screech-owl.jpg"
+  },
+  {
+    name: "Western Scrub Jay",
+    photo: "./public/img/townsends-solitaire.jpg"
+  },
+  {
+    name: "Western Tanager",
+    photo: "./public/img/western-tanager.jpg"
+  },
+  {
+    name: "Western Wood-pewee",
+    photo: "./public/img/western-wood-pewee.jpg"
+  },
+  {
+    name: "Whimbrel",
+    photo: "./public/img/whimbrel.jpg"
+  },
+  {
+    name: "White-breasted Nuthatch",
+    photo: "./public/img/white-breasted-nuthatch.jpg"
+  },
+  {
+    name: "White-crowned Sparrow",
+    photo: "./public/img/white-breasted-nuthatch.jpg"
+  },
+  {
+    name: "White-faced Ibis",
+    photo: "./public/img/white-faced-ibis.jpg"
+  },
+  {
+    name: "White-headed Woodpecker",
+    photo: "./public/img/white-headed-woodpecker.jpg"
+  },
+  {
+    name: "White-tailed Ptarmigan",
+    photo: "./public/img/white-tailed-ptarmigan.jpg"
+  },
+  {
+    name: "White-throated Swift",
+    photo: "./public/img/white-throated-swift.jpg"
+  },
+  {
+    name: "White-winged Scoter",
+    photo: "./public/img/white-winged-scoter.jpg"
+  },
+  {
+    name: "Willet",
+    photo: "./public/img/willet.jpg"
+  },
+  {
+    name: "Williamson's Sapsucker",
+    photo: "./public/img/williamsons-sapsucker.jpg"
+  },
+  {
+    name: "Wilson's Phalarope",
+    photo: "./public/img/wilsons-phalarope.jpg"
+  },
+  {
+    name: "Wilson's Warbler",
+    photo: "./public/img/wilsons-warbler.jpg"
+  },
+  {
+    name: "Winter Wren",
+    photo: "./public/img/winter-wren.jpg"
+  },
+  {
+    name: "Wood Duck",
+    photo: "./public/img/wood-duck.jpg"
+  },
+  {
+    name: "Wrentit",
+    photo: "./public/img/wrentit.jpg"
+  },
+  {
+    name: "Yellow-breasted Chat",
+    photo: "./public/img/yellow-breasted-chat.jpg"
+  },
+  {
+    name: "Yellow-headed Blackbird",
+    photo: "./public/img/yellow-headed-blackbird.jpg"
+  },
+  {
+    name: "Yellow-rumped Warbler",
+    photo: "./public/img/yellow-rumped-warbler.jpg"
+  },
+  {
+    name: "Yellow Warbler",
+    photo: "./public/img/yellow-warbler.jpg"
+  }
 ];
 
 module.exports = birdsArray;
