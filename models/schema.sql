@@ -1,8 +1,7 @@
-DROP DATABASE IF EXISTS exampledb;
-CREATE DATABASE exampledb;
+CREATE DATABASE chirpydb;
 
 
-USE exampledb;
+USE chirbydb;
 
 CREATE TABLE chirp_table (
   item_id INT(10) AUTO_INCREMENT NOT NULL,
