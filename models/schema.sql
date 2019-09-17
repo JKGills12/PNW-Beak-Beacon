@@ -1,4 +1,3 @@
-
 DROP DATABASE IF EXISTS chirpydb;
 CREATE DATABASE chirpydb;
 USE chirpydb;
