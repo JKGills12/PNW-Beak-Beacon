@@ -1,4 +1,4 @@
-DROP DATABASE IF EXISTS bigdata_db;
+DROP DATABASE IF EXISTS chirpydb;
 CREATE DATABASE chirpydb;
 USE chirpydb;
 
@@ -12,7 +12,7 @@ CREATE TABLE chirp_table (
   
   PRIMARY KEY(item_id)
 );
-   
+
    SELECT * FROM chirp_table;
       INSERT INTO chirp_table (bird_name, family, voice, habitat, places)
          VALUES 
