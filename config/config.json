@@ -2,7 +2,9 @@
     "development": {
         "username": "root",
         "password": "root",
-        "database": "exampledb",
+
+        "database": "chirbydb",
+
         "host": "localhost",
         "dialect": "mysql"
     },
