@@ -108,3 +108,31 @@ var handleDeleteBtnClick = function() {
 // Add event listeners to the submit and delete buttons
 $submitBtn.on("click", handleFormSubmit);
 $exampleList.on("click", ".delete", handleDeleteBtnClick);
+
+var locations = [
+  ['Bondi Beach', -33.890542, 151.274856, 4],
+  ['Coogee Beach', -33.923036, 151.259052, 5],
+  ['Cronulla Beach', -34.028249, 151.157507, 3],
+  ['Manly Beach', -33.80010128657071, 151.28747820854187, 2],
+  ['Maroubra Beach', -33.950198, 151.259302, 1]
+];
+
+
+function myMap() {
+  var mapProp= {
+    center:new google.maps.LatLng(47.71422684704482,-119.88853230090876),
+    zoom:6,
+  };
+  var myCenter = {lat: 47.71422684704482, lng: -119.88853230090876};
+  var Olympia = {lat: 47.0379, lng: -122.9007};
+
+
+  var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+  var marker = new google.maps.Marker({position: myCenter, map: map});
+  var markerTwo = new google.maps.Marker({position: Olympia, map: map});
+
+marker.setMap(map);
+markerTwo.setMap(map);
+  };
+
+  myMap();
