@@ -9,7 +9,11 @@ CREATE TABLE chirp_table (
   family varchar(255) NOT NULL,
   voice varchar(255) NOT NULL,
   habitat varchar(255) NOT NULL,
+<<<<<<< HEAD
   places varchar(255) NOT NULL,
+=======
+  places varchar(255) NOT NULL,\
+>>>>>>> b831a79d1eea7d94fcd5e93f10ac659ff51d25df
   PRIMARY KEY(item_id)
 );
    
