@@ -75,6 +75,8 @@ var handleFormSubmit = function(event) {
     place:$placename.val().trim()
   };
 
+  
+
   if (!($birdname && $familyname && $voicename && $habitatname && $placename)) {
     alert("You must enter a bird name, family, voice, habitat and places!");
     return;
