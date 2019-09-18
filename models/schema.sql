@@ -1,18 +1,18 @@
-DROP DATABASE IF EXISTS chirpydb;
 CREATE DATABASE chirpydb;
-USE chirpydb;
+
+
+USE chirbydb;
 
 CREATE TABLE chirp_table (
   item_id INT(10) AUTO_INCREMENT NOT NULL,
-  bird_name varchar(255) NOT NULL,
+  bird_name varchar(100) NOT NULL,
   family varchar(255) NOT NULL,
   voice varchar(255) NOT NULL,
   habitat varchar(255) NOT NULL,
   places varchar(255) NOT NULL,
-  
   PRIMARY KEY(item_id)
 );
-
+   
    SELECT * FROM chirp_table;
       INSERT INTO chirp_table (bird_name, family, voice, habitat, places)
          VALUES 
@@ -272,5 +272,5 @@ CREATE TABLE chirp_table (
             ("Pine Siskin", "Finch", "Wheezy", "Yards", "Northwest"),
             ("American Goldfinch", "Finch", "Twitters", "Farms", "Northwest"),
             ("Evening Grosbeak", "Finch", "Warble", "Forest", "Northwest"),
-            ("House Sparrow", "Old World Sparrow", "Chireep", "Towns", "Northwest")
+            ("House Sparrow", "Old World Sparrow", "Chireep", "Towns", "Northwest");
 

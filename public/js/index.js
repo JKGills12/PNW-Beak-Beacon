@@ -1,6 +1,9 @@
 // Get references to page elements
-var $exampleText = $("#example-text");
-var $exampleDescription = $("#example-description");
+var $birdname = $("#bird-name");
+var $familyname = $("#family-name");
+var $voicename = $("#voice-name");
+var $habitatname = $("#habitat-name");
+var $placename = $("#place-name")
 var $submitBtn = $("#submit");
 var $exampleList = $("#example-list");
 
@@ -12,7 +15,7 @@ var API = {
         "Content-Type": "application/json"
       },
       type: "POST",
-      url: "api/examples",
+      url: "/add",
       data: JSON.stringify(example)
     });
   },
@@ -65,12 +68,17 @@ var handleFormSubmit = function(event) {
   event.preventDefault();
 
   var example = {
-    text: $exampleText.val().trim(),
-    description: $exampleDescription.val().trim()
+    birdname: $birdname.val().trim(),
+    family: $familyname.val().trim(),
+    voice:$voicename.val().trim(),
+    habitat:$habitatname.val().trim(),
+    place:$placename.val().trim()
   };
 
-  if (!(example.text && example.description)) {
-    alert("You must enter an example text and description!");
+  
+
+  if (!($birdname && $familyname && $voicename && $habitatname && $placename)) {
+    alert("You must enter a bird name, family, voice, habitat and places!");
     return;
   }
 
@@ -78,8 +86,11 @@ var handleFormSubmit = function(event) {
     refreshExamples();
   });
 
-  $exampleText.val("");
-  $exampleDescription.val("");
+  $birdname.val("")
+  $familyname.val("")
+  $voicename.val("")
+  $habitatname.val("")
+  $placename.val("")
 };
 
 // handleDeleteBtnClick is called when an example's delete button is clicked
@@ -97,3 +108,31 @@ var handleDeleteBtnClick = function() {
 // Add event listeners to the submit and delete buttons
 $submitBtn.on("click", handleFormSubmit);
 $exampleList.on("click", ".delete", handleDeleteBtnClick);
+
+var locations = [
+  ['Bondi Beach', -33.890542, 151.274856, 4],
+  ['Coogee Beach', -33.923036, 151.259052, 5],
+  ['Cronulla Beach', -34.028249, 151.157507, 3],
+  ['Manly Beach', -33.80010128657071, 151.28747820854187, 2],
+  ['Maroubra Beach', -33.950198, 151.259302, 1]
+];
+
+
+function myMap() {
+  var mapProp= {
+    center:new google.maps.LatLng(47.71422684704482,-119.88853230090876),
+    zoom:6,
+  };
+  var myCenter = {lat: 47.71422684704482, lng: -119.88853230090876};
+  var Olympia = {lat: 47.0379, lng: -122.9007};
+
+
+  var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+  var marker = new google.maps.Marker({position: myCenter, map: map});
+  var markerTwo = new google.maps.Marker({position: Olympia, map: map});
+
+marker.setMap(map);
+markerTwo.setMap(map);
+  };
+
+  myMap();
