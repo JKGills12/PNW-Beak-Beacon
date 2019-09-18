@@ -1,7 +1,7 @@
 CREATE DATABASE chirpydb;
 
 
-USE chirbydb;
+USE chirpydb;
 
 CREATE TABLE chirp_table (
   item_id INT(10) AUTO_INCREMENT NOT NULL,
