@@ -273,3 +273,4 @@ CREATE TABLE chirp_table (
             ("American Goldfinch", "Finch", "Twitters", "Farms", "Northwest"),
             ("Evening Grosbeak", "Finch", "Warble", "Forest", "Northwest"),
             ("House Sparrow", "Old World Sparrow", "Chireep", "Towns", "Northwest");
+
