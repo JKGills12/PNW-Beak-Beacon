@@ -1,6 +1,7 @@
 CREATE DATABASE chirpydb;
 
-USE chirpydb;
+
+USE chirbydb;
 
 CREATE TABLE chirp_table (
   item_id INT(10) AUTO_INCREMENT NOT NULL,
@@ -8,7 +9,7 @@ CREATE TABLE chirp_table (
   family varchar(255) NOT NULL,
   voice varchar(255) NOT NULL,
   habitat varchar(255) NOT NULL,
-  places varchar(255) NOT NULL,
+  places varchar(255) NOT NULL,\
   PRIMARY KEY(item_id)
 );
    
