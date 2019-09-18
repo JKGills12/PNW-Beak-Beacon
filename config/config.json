@@ -1,16 +1,18 @@
 {
     "development": {
         "username": "root",
+
         "password": "root",
 
         "database": "chirpydb",
+
 
         "host": "localhost",
         "dialect": "mysql"
     },
     "test": {
         "username": "root",
-        "password": "root",
+        "password": null,
         "database": "testdb",
         "host": "localhost",
         "dialect": "mysql",
