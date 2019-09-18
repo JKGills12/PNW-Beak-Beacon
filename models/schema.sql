@@ -3,17 +3,13 @@ CREATE DATABASE chirpydb;
 
 USE chirbydb;
 
-CREATE TABLE chirp_table (
+CREATE TABLE chirp_tables (
   item_id INT(10) AUTO_INCREMENT NOT NULL,
   bird_name varchar(100) NOT NULL,
   family varchar(255) NOT NULL,
   voice varchar(255) NOT NULL,
   habitat varchar(255) NOT NULL,
-<<<<<<< HEAD
   places varchar(255) NOT NULL,
-=======
-  places varchar(255) NOT NULL,\
->>>>>>> b831a79d1eea7d94fcd5e93f10ac659ff51d25df
   PRIMARY KEY(item_id)
 );
    
