@@ -9,17 +9,11 @@ CREATE TABLE chirp_table (
   family varchar(255) NOT NULL,
   voice varchar(255) NOT NULL,
   habitat varchar(255) NOT NULL,
-  location varchar(255) NOT NULL,
+  place varchar(255) NOT NULL,
   PRIMARY KEY(item_id)
 );
    
    SELECT * FROM chirp_table;
-<<<<<<< HEAD
-   
-   INSERT INTO chirp_table (bird_name, family, voice, habitat, location)
-   VALUES ("Red-Throated Loon", "Loon", "Silent in NW", "Ocean and Bays", "Coast"),
-   ("Pacific Loon", "Loon", "Silent in NW", "Ocean and bays", "Coast");
-=======
       INSERT INTO chirp_table (bird_name, family, voice, habitat, places)
          VALUES 
             ("Red-Throated Loon", "Loon", "Silent in NW", "Ocean and Bays", "Coast"),
@@ -279,4 +273,3 @@ CREATE TABLE chirp_table (
             ("American Goldfinch", "Finch", "Twitters", "Farms", "Northwest"),
             ("Evening Grosbeak", "Finch", "Warble", "Forest", "Northwest"),
             ("House Sparrow", "Old World Sparrow", "Chireep", "Towns", "Northwest");
->>>>>>> 6185ad4cb51412fc94ee800eed77ae260f04c3e6

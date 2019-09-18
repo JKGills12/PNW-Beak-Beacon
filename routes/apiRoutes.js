@@ -1,26 +1,47 @@
+// *********************************************************************************
+// api-routes.js - this file offers a set of routes for displaying and saving data to the db
+// *********************************************************************************
+
+// Dependencies
+// =============================================================
 var db = require("../models");
 
+
+// Routes
+// =============================================================
 module.exports = function(app) {
-  // Get all examples
-  app.get("/api/examples", function(req, res) {
-    db.Example.findAll({}).then(function(dbExamples) {
-      res.json(dbExamples);
+
+  // Get all chirps
+  app.get("/api/all", function(req, res) {
+
+    // Finding all Chirps, and then returning them to the user as JSON.
+    // Sequelize queries are asynchronous, which helps with perceived speed.
+    // If we want something to be guaranteed to happen after the query, we'll use
+    // the .then function
+    db.chirp_table.findAll({}).then(function(results) {
+      // results are available to us inside the .then
+      res.json(results);
     });
+
   });
 
-  // Create a new example
-  app.post("/api/examples", function(req, res) {
-    db.Example.create(req.body).then(function(dbExample) {
-      res.json(dbExample);
+  // Add a chirp
+  app.post("/add", function(req, res) {
+
+    console.log("Chirp Data:");
+    console.log(req.body);
+
+    db.chirp_table.create({
+      bird_name: req.body.author,
+      family: req.body.body,
+      voice: req.body.created_at,
+      habitat: req.body.habitat,
+      place: req.body.place
+    }).then(function(results) {
+      // `results` here would be the newly created chirp`
+      res.end();
     });
+
   });
 
-  // Delete an example by id
-  app.delete("/api/examples/:id", function(req, res) {
-    db.Example.destroy({ where: { id: req.params.id } }).then(function(
-      dbExample
-    ) {
-      res.json(dbExample);
-    });
-  });
 };
