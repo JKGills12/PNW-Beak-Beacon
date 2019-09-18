@@ -21,9 +21,10 @@ module.exports = function(app) {
     db.chirp_table.findAll({}).then(function(results) {
       // results are available to us inside the .then
       res.json(results);
-    });
+    })
 
   });
+
 
   // Add a chirp
   app.post("/add", function(req, res) {
@@ -40,6 +41,16 @@ module.exports = function(app) {
     }).then(function(results) {
       // `results` here would be the newly created chirp`
       res.end();
+    })
+  });
+
+  // Delete an example by id
+  app.delete("/api/examples/:id", function(req, res) {
+    db.Chirpy.destroy({ where: { id: req.params.id } }).then(function(
+      dbChirpy
+    ) {
+      res.json(dbChirpy);
+
     });
 
   });
