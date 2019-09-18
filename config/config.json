@@ -4,7 +4,7 @@
 
         "password": "root",
 
-        "database": "chirbydb",
+        "database": "chirpydb",
 
 
         "host": "localhost",
