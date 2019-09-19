@@ -18,7 +18,7 @@ module.exports = function(app) {
     // Sequelize queries are asynchronous, which helps with perceived speed.
     // If we want something to be guaranteed to happen after the query, we'll use
     // the .then function
-    db.chirp_table.findAll({}).then(function(results) {
+    db.chirp_tables.findAll({}).then(function(results) {
       // results are available to us inside the .then
       res.json(results);
     })
@@ -32,10 +32,10 @@ module.exports = function(app) {
     console.log("Chirp Data:");
     console.log(req.body);
 
-    db.chirp_table.create({
-      bird_name: req.body.author,
-      family: req.body.body,
-      voice: req.body.created_at,
+    db.chirp_tables.create({
+      bird_name: req.body.birdname,
+      family: req.body.family,
+      voice: req.body.voice,
       habitat: req.body.habitat,
       place: req.body.place
     }).then(function(results) {
