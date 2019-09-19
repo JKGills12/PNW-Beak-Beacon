@@ -1,58 +1,50 @@
-// *********************************************************************************
-// api-routes.js - this file offers a set of routes for displaying and saving data to the db
-// *********************************************************************************
+require("dotenv").config();
+var express = require("express");
+var exphbs = require("express-handlebars");
+var bodyParser = require("body-parser");
 
-// Dependencies
-// =============================================================
-var db = require("../models");
+var db = require("./models");
 
+var app = express();
+var PORT = process.env.PORT || 3000;
+
+// Middleware
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.json());
+app.use(express.static("public"));
+
+
+// Handlebars
+app.engine(
+  "handlebars",
+  exphbs({
+    defaultLayout: "main"
+  })
+);
+app.set("view engine", "handlebars");
 
 // Routes
-// =============================================================
-module.exports = function(app) {
+require("./routes/apiRoutes")(app);
+require("./routes/htmlRoutes")(app);
 
-  // Get all chirps
-  app.get("/api/all", function(req, res) {
+var syncOptions = { force: false };
 
-    // Finding all Chirps, and then returning them to the user as JSON.
-    // Sequelize queries are asynchronous, which helps with perceived speed.
-    // If we want something to be guaranteed to happen after the query, we'll use
-    // the .then function
-    db.chirp_tables.findAll({}).then(function(results) {
-      // results are available to us inside the .then
-      res.json(results);
-    })
+// If running a test, set syncOptions.force to true
+// clearing the `testdb`
+if (process.env.NODE_ENV === "test") {
+  syncOptions.force = true;
+}
 
+// Starting the server, syncing our models ------------------------------------/
+db.sequelize.sync(syncOptions).then(function() {
+  app.listen(PORT, function() {
+    console.log(
+      "==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.",
+      PORT,
+      PORT
+    );
   });
+});
 
+module.exports = app;
 
-  // Add a chirp
-  app.post("/add", function(req, res) {
-
-    console.log("Chirp Data:");
-    console.log(req.body);
-
-    db.chirp_tables.create({
-      bird_name: req.body.birdname,
-      family: req.body.family,
-      voice: req.body.voice,
-      habitat: req.body.habitat,
-      place: req.body.place
-    }).then(function(results) {
-      // `results` here would be the newly created chirp`
-      res.end();
-    })
-  });
-
-  // Delete an example by id
-  app.delete("/api/examples/:id", function(req, res) {
-    db.Chirpy.destroy({ where: { id: req.params.id } }).then(function(
-      dbChirpy
-    ) {
-      res.json(dbChirpy);
-
-    });
-
-  });
-
-};
