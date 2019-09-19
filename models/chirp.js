@@ -5,9 +5,8 @@ module.exports = function(sequelize, DataTypes) {
     bird_name: DataTypes.STRING,
     family: DataTypes.STRING,
     voice: DataTypes.STRING,
-    habitat:DataTypes.STRING,
-    place:DataTypes.STRING
+    habitat: DataTypes.STRING,
+    place: DataTypes.STRING
   });
   return Chirp;
-} 
-
+};

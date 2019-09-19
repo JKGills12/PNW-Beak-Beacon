@@ -1,9 +1,6 @@
 // Get references to page elements
-var $birdname = $("#bird-name");
-var $familyname = $("#family-name");
-var $voicename = $("#voice-name");
-var $habitatname = $("#habitat-name");
-var $placename = $("#place-name")
+var $exampleText = $("#example-text");
+var $exampleDescription = $("#example-description");
 var $submitBtn = $("#submit");
 var $exampleList = $("#example-list");
 
@@ -15,7 +12,7 @@ var API = {
         "Content-Type": "application/json"
       },
       type: "POST",
-      url: "/add",
+      url: "api/examples",
       data: JSON.stringify(example)
     });
   },
@@ -68,17 +65,12 @@ var handleFormSubmit = function(event) {
   event.preventDefault();
 
   var example = {
-    birdname: $birdname.val().trim(),
-    family: $familyname.val().trim(),
-    voice:$voicename.val().trim(),
-    habitat:$habitatname.val().trim(),
-    place:$placename.val().trim()
+    text: $exampleText.val().trim(),
+    description: $exampleDescription.val().trim()
   };
 
-  
-
-  if (!($birdname && $familyname && $voicename && $habitatname && $placename)) {
-    alert("You must enter a bird name, family, voice, habitat and places!");
+  if (!(example.text && example.description)) {
+    alert("You must enter an example text and description!");
     return;
   }
 
@@ -86,11 +78,8 @@ var handleFormSubmit = function(event) {
     refreshExamples();
   });
 
-  $birdname.val("")
-  $familyname.val("")
-  $voicename.val("")
-  $habitatname.val("")
-  $placename.val("")
+  $exampleText.val("");
+  $exampleDescription.val("");
 };
 
 // handleDeleteBtnClick is called when an example's delete button is clicked
@@ -109,14 +98,6 @@ var handleDeleteBtnClick = function() {
 $submitBtn.on("click", handleFormSubmit);
 $exampleList.on("click", ".delete", handleDeleteBtnClick);
 
-var locations = [
-  ['Bondi Beach', -33.890542, 151.274856, 4],
-  ['Coogee Beach', -33.923036, 151.259052, 5],
-  ['Cronulla Beach', -34.028249, 151.157507, 3],
-  ['Manly Beach', -33.80010128657071, 151.28747820854187, 2],
-  ['Maroubra Beach', -33.950198, 151.259302, 1]
-];
-
 
 function myMap() {
   var mapProp= {
@@ -125,6 +106,7 @@ function myMap() {
   };
   var myCenter = {lat: 47.71422684704482, lng: -119.88853230090876};
   var Olympia = {lat: 47.0379, lng: -122.9007};
+  var Cascades
 
 
   var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);

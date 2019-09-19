@@ -8,19 +8,18 @@ module.exports = function(app) {
         msg: "Welcome!",
         example: dbExample
       });
-
-    })
+    });
   });
 
   // Load example page and pass in an example by id
   app.get("/example/:id", function(req, res) {
-    db.chirp_table.findOne({ where: { id: req.params.id } }).then(function(
-      dbExample
-    ) {
-      res.render("example", {
-        example: dbExample
+    db.chirp_table
+      .findOne({ where: { id: req.params.id } })
+      .then(function(dbExample) {
+        res.render("example", {
+          example: dbExample
+        });
       });
-    });
   });
 
   // Renders add handlebar page
