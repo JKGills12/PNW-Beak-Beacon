@@ -3,7 +3,7 @@ var db = require("../models");
 module.exports = function(app) {
   // Load index page
   app.get("/", function(req, res) {
-    db.chirp_table.findAll({}).then(function(dbExample) {
+    db.chirp_tables.findAll({}).then(function(dbExample) {
       res.render("index", {
         msg: "Welcome!",
         example: dbExample
