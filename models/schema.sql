@@ -3,7 +3,7 @@ CREATE DATABASE chirpydb;
 
 USE chirpydb;
 
-CREATE TABLE chirp_table (
+CREATE TABLE chirp_tables (
   item_id INT(10) AUTO_INCREMENT NOT NULL,
   bird_name varchar(100) NOT NULL,
   family varchar(255) NOT NULL,

@@ -20,11 +20,24 @@
                 <h2>SEARCH BIRDS</h2>
 
                 <div class="search-container">
-                    <form action="/action_page.php">
-
+                    
+                        <form action="/api/one" method="GET" enctype="application/x-www-form-urlencoded">
                         <input type="text_search" placeholder="Search Bird Name.." name="search">
                         <button type="submit"><i class="fa fa-search"></i></button>
-                    </form>
+                        </form>
+
+                        <br>
+                        Bird Name: {{results.bird_name}}
+                        <br>
+                        Family: {{results.family}}
+                        <br>
+                        Voice: {{results.voice}}
+                        <br>
+                        Habitat: {{results.habitat}}
+                        <br>
+                        Place: {{results.place}}
+                        
+                    
                 </div>
                 <br>
                 <h6>-OR-</h6>
