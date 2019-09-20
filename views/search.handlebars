@@ -3,106 +3,40 @@
     <li><a href="/add">Add</a></li>
     <li><a class="active" href="/search">Search</a></li>
 </ul>
-
-
 <div id="home">
     <div class="container">
         <div class="row">
             <div class="col-8 offset-2">
-
-
                 <div class="jumbotron"
                     style="background-image: url(https://media.treehugger.com/assets/images/2016/07/green-forest-trees.jpg.860x0_q70_crop-scale.jpg); background-size: 100%;">
                     <div class="tree_banner">
                     </div>
                 </div>
-
                 <h2>SEARCH BIRDS</h2>
-
                 <div class="search-container">
-                    <form action="/action_page.php">
-
+                    
+                        <form action="/api/one" method="GET" enctype="application/x-www-form-urlencoded">
                         <input type="text_search" placeholder="Search Bird Name.." name="search">
                         <button type="submit"><i class="fa fa-search"></i></button>
-                    </form>
+                        </form>
+                        <br>
+                        Bird Name: {{results.bird_name}}
+                        <br>
+                        Family: {{results.family}}
+                        <br>
+                        Voice: {{results.voice}}
+                        <br>
+                        Habitat: {{results.habitat}}
+                        <br>
+                        Places: {{results.places}}
+                        
+                    
                 </div>
                 <br>
-                <h6>-OR-</h6>
-                <br>
-
-                <h2>SEARCH TYPE OF BIRD</h2>
-
-                <div class="custom-select" style="width:180px;">
-                    <select>
-                        <option value="0">Select Bird Family:</option>
-                        <option value="1">Loon</option>
-                        <option value="2">Grebe</option>
-                        <option value="3">Albatross</option>
-                        <option value="4">Shearwater</option>
-                        <option value="5">Pelican</option>
-                        <option value="6">Cormorant</option>
-                        <option value="7">Heron</option>
-                        <option value="8">Ibis</option>
-                        <option value="9">Waterfowl</option>
-                        <option value="10">American Vulture</option>
-                        <option value="11">Hawk and Eagle</option>
-                        <option value="12">Falcon</option>
-                        <option value="13">Partridge</option>
-                        <option value="14">Rail</option>
-                        <option value="15">Crane</option>
-                        <option value="16">Plover</option>
-                        <option value="17">Oystercatcher</option>
-                        <option value="18">Avocet and Stilt</option>
-                        <option value="19">Sandpiper</option>
-                        <option value="20">Gull and Tern</option>
-                        <option value="21">Puffin and Murre</option>
-                        <option value="22">Pigeon and Dove</option>
-                        <option value="23">Barn Owl</option>
-                        <option value="24">Owl</option>
-                        <option value="25">Nightjar</option>
-                        <option value="26">Swift</option>
-                        <option value="27">Hummingbird</option>
-                        <option value="28">Kingfisher</option>
-                        <option value="29">Woodpecker</option>
-                        <option value="30">Tyrant Flycatcher</option>
-                        <option value="31">Lark</option>
-                        <option value="32">Swallow</option>
-                        <option value="33">Crow and Jay</option>
-                        <option value="34">Chickadee</option>
-                        <option value="35">Bushtit</option>
-                        <option value="36">Nuthatch</option>
-                        <option value="37">Creeper</option>
-                        <option value="38">Wren</option>
-                        <option value="39">Dipper</option>
-                        <option value="40">Old World Warbler</option>
-                        <option value="41">Thrush</option>
-                        <option value="42">Babbler</option>
-                        <option value="43">Mockingbird</option>
-                        <option value="44">Wagtail and Pipit</option>
-                        <option value="45">Waxwing</option>
-                        <option value="46">Shrike</option>
-                        <option value="47">Starling</option>
-                        <option value="48">Vireo</option>
-                        <option value="49">Wood Warbler</option>
-                        <option value="50">Tanager</option>
-                        <option value="51">Grosbeak</option>
-                        <option value="52">American Sparrow</option>
-                        <option value="53">Blackbird</option>
-                        <option value="54">Finch</option>
-                        <option value="55">Old Finch Family</option>
-                    </select>
-                </div>
-
-                <br>
-                <br>
-
-                <button id="search" class="btn btn-primary float-left">Submit</button>
-
+ 
             </div>
         </div>
     </div>
 </div>
-
-
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="/js/index.js"></script>

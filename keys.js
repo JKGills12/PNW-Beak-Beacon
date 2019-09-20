@@ -9,5 +9,5 @@ module.exports = mysql.createConnection({
   port: 3306,
   user: "root",
   password: process.env.MYSQL_PASSWORD,
-  database: "bamazon_db"
+  database: "chirpydb"
 });

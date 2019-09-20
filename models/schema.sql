@@ -1,7 +1,7 @@
 CREATE DATABASE chirpydb;
 
 
-USE chirbydb;
+USE chirpydb;
 
 CREATE TABLE chirp_tables (
   item_id INT(10) AUTO_INCREMENT NOT NULL,
@@ -13,8 +13,8 @@ CREATE TABLE chirp_tables (
   PRIMARY KEY(item_id)
 );
    
-   SELECT * FROM chirp_table;
-      INSERT INTO chirp_table (bird_name, family, voice, habitat, places)
+   SELECT * FROM chirp_tables;
+      INSERT INTO chirp_tables (bird_name, family, voice, habitat, places)
          VALUES 
             ("Red-Throated Loon", "Loon", "Silent in NW", "Ocean and Bays", "Coast"),
             ("Pacific Loon", "Loon", "Silent in NW", "Ocean and bays", "Coast"),
@@ -118,7 +118,7 @@ CREATE TABLE chirp_tables (
             ("Northern Flicker", "Woodpecker", "Drum", "Woodlands", "Northwest"),
             ("Pileated Woodpecker", "Woodpecker", "Wucka", "Forests", "Cascades"),
             ("Says Phoebe", "Tyrant Flycatcher", "Peeurr", "Grasslands", "Cascades"),
-            ("Ash-Throated Flycatcher", "Tyrant Flycatcher", "Ka-Brick", "Woodlands"),
+            ("Ash-Throated Flycatcher", "Tyrant Flycatcher", "Ka-Brick", "Woodlands", ),
             ("Western Kingbird", "Tyrant Flycatcher", "Shrill", "Grasslands", "Cascades"),
             ("Horned Lark", "Lark", "Tinkling", "Grasslands", "Northwest"),
             ("Tree Swallow", "Swallow", "Cheat", "Wetlands", "Northwest"),
