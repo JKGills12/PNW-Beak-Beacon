@@ -5,6 +5,7 @@ var bodyParser = require("body-parser");
 
 var db = require("./models");
 
+
 var app = express();
 var PORT = process.env.PORT || 3000;
 
@@ -43,8 +44,21 @@ db.sequelize.sync(syncOptions).then(function() {
       PORT,
       PORT
     );
+
   });
 });
 
+
 module.exports = app;
+
+=======
+  // Delete an example by id
+  app.delete("/api/examples/:id", function(req, res) {
+    db.Chirpy.destroy({ where: { id: req.params.id } }).then(function(
+      dbChirpy
+    ) {
+      res.json(dbChirpy);
+    });
+  });
+};
 
