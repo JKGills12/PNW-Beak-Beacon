@@ -19,6 +19,9 @@
         "logging": false
     },
     "production": {
+        "username": "root",
+        "password": "root",
+        "database": "chirpydb",
         "use_env_variable": "JAWSDB_URL",
         "dialect": "mysql"
     }
