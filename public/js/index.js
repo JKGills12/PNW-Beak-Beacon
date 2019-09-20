@@ -1,8 +1,12 @@
 // Get references to page elements
-var $exampleText = $("#example-text");
-var $exampleDescription = $("#example-description");
+var $birdname = $("#bird-name");
+var $familyname = $("#family-name");
+var $voicename = $("#voice-name");
+var $habitatname = $("#habitat-name");
+var $placename = $("#places-name");
 var $submitBtn = $("#submit");
 var $exampleList = $("#example-list");
+var $birdsearch = $('#bird-search');
 
 // The API object contains methods for each kind of request we'll make
 var API = {
@@ -12,7 +16,7 @@ var API = {
         "Content-Type": "application/json"
       },
       type: "POST",
-      url: "api/examples",
+      url: "/add",
       data: JSON.stringify(example)
     });
   },
@@ -65,12 +69,15 @@ var handleFormSubmit = function(event) {
   event.preventDefault();
 
   var example = {
-    text: $exampleText.val().trim(),
-    description: $exampleDescription.val().trim()
+    birdname: $birdname.val().trim(),
+    family: $familyname.val().trim(),
+    voice: $voicename.val().trim(),
+    habitat: $habitatname.val().trim(),
+    places: $placename.val().trim()
   };
 
-  if (!(example.text && example.description)) {
-    alert("You must enter an example text and description!");
+  if (!($birdname && $familyname && $voicename && $habitatname && $placename)) {
+    alert("You must enter a bird name, family, voice, habitat and places!");
     return;
   }
 
@@ -78,8 +85,11 @@ var handleFormSubmit = function(event) {
     refreshExamples();
   });
 
-  $exampleText.val("");
-  $exampleDescription.val("");
+  $birdname.val("");
+  $familyname.val("");
+  $voicename.val("");
+  $habitatname.val("");
+  $placename.val("");
 };
 
 // handleDeleteBtnClick is called when an example's delete button is clicked

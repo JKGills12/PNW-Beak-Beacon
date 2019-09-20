@@ -1,8 +1,12 @@
 {
     "development": {
         "username": "root",
-        "password": null,
-        "database": "exampledb",
+
+        "password": "root",
+
+        "database": "chirpydb",
+
+
         "host": "localhost",
         "dialect": "mysql"
     },
@@ -15,6 +19,9 @@
         "logging": false
     },
     "production": {
+        "username": "root",
+        "password": "root",
+        "database": "chirpydb",
         "use_env_variable": "JAWSDB_URL",
         "dialect": "mysql"
     }
