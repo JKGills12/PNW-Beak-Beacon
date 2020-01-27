@@ -2,6 +2,7 @@
 
 This is a web app for bird enthusiasts. In this web app, users will be able to search for PNW birds and also add any new PNW bird species they encounter if it is not in the current database.
 
+![screenshot](/public/img/pnw-beak.gif)
 ## Getting Started
 
 ### Prerequisites
@@ -17,6 +18,7 @@ This is a web app for bird enthusiasts. In this web app, users will be able to s
 
 1) Clone this repo to your desktop.
 You will start out with the base code to get you up and running.
+2) Run: npm install (installs the packages)
 
 
 ## Directions
